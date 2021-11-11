@@ -10,12 +10,10 @@ class matematika{
 		char operasi;
 	
 	public :
-		
-		void setaritmatika(float a,float b){
-			angka1  = a;
-			angka2  = b;
+		void setaritmatika(float x,float y){
+			angka1  = x;
+			angka2  = y;
 		}
-		
 		void tambah(){
 			cout<<"Masukan angka 1       = ";cin>>angka1;
 	    	cout<<"Masukan angka Operasi = ";cin>>operasi;
@@ -59,7 +57,7 @@ class matematika{
 int main(){
 	int p;
 	char y;
-	matematika w;
+	matematika a;
 	
 
 	menu:
@@ -72,7 +70,7 @@ int main(){
 		cout<<"Pilih = ";cin>>p;
 	
 	if(p == 1){
-		w.tambah();
+		a.tambah();
 		cout<<"Ingin memilih menu lain (y/n) = ";cin>>y;
 		if(y == 'y'){
 		goto menu;	
@@ -83,7 +81,7 @@ int main(){
 		}	
 	}
 	else if(p == 2){
-		w.kurang();
+		a.kurang();
 		cout<<"Ingin memilih menu lain (y/n) = ";cin>>y;
 		if(y == 'y'){
 		goto menu;
@@ -94,7 +92,7 @@ int main(){
 		}	
 	}
 	else if(p == 3){
-		w.kali();
+		a.kali();
 		cout<<"Ingin meilih menu lain (y/n) = ";cin>>y;
 		if(y == 'y'){
 			goto menu;
@@ -105,7 +103,7 @@ int main(){
 		}	
 	}
 	else if(p == 4){
-		w.bagi();
+		a.bagi();
 		cout<<"Ingin meilih mmenu lain (y/n) = ";cin>>y;
 		if(y == 'y'){
 			goto menu;
